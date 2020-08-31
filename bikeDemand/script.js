@@ -19,9 +19,9 @@ neuralNetwork.load(modelDetails, predict);
 
 const inputs = {
   Hour: parseInt(urlParams.get('x1')),
-  TemperatureC:  Math.floor(parseInt(urlParams.get('x1'))*1.0),
+  TemperatureC: parseFloat(urlParams.get('x2')),
   Humidity: parseInt(urlParams.get('x3')),
-  WindSpeed:  Math.floor(parseInt(urlParams.get('x4'))*1.0),
+  WindSpeed: parseFloat(urlParams.get('x4')),
   Seasons:  parseInt(urlParams.get('x5')),
   Holiday:  parseInt(urlParams.get('x6')),
   FunctioningDay: parseInt(urlParams.get('x7'))
@@ -57,6 +57,6 @@ function predict() {
 // Temperature-Temperature in Celsius
 // Humidity - %
 // Windspeed - m/s
-// Seasons - Winter, Spring, Summer, Autumn
-// Holiday - Holiday/No holiday
-// Functional Day - NoFunc(Non Functional Hours), Fun(Functional hours)
+// Seasons - Winter, Spring, Summer, Autumn (1,2,3,4)
+// Holiday - Holiday/No holiday (No: 0, Yes: 1)
+// Functional Day - NoFunc(Non Functional Hours), Fun(Functional hours) (No: 0, Yes: 1)
