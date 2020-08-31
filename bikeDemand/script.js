@@ -31,7 +31,7 @@ console.log(inputs);
 
 function predict() {
   console.log("predicting");
-  neuralNetwork.classify(inputs, (err, results) => {
+  neuralNetwork.predict(inputs, (err, results) => {
     if (err) {
       console.log(err);
       return;
