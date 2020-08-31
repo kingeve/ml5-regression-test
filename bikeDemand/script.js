@@ -1,5 +1,5 @@
 const urlParams = new URLSearchParams(window.location.search);
-const rentalBikes = document.querySelector("#happiness");
+const rentalBikes = document.querySelector("#rentalBikes");
 //   //https://www.thetopsites.net/projects/tensorflowjs/
 // /The main difference between them is that the output variable in regression is numerical (or continuous) while that for classification is categorical (or discrete).
 const options = {
