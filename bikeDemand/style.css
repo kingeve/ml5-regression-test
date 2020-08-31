@@ -1,0 +1,82 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  body {
+ 
+    margin: 0;
+    padding: 10;
+    min-height: 100vh;
+
+  }
+  
+  /* Hieronder mag je eigen CSS code */
+  
+  body {  
+    display: grid;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #EEEEEE;
+  }
+  form {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 100vw;
+    grid-template-rows:  20vh  auto auto auto auto auto auto auto 10vh;
+  }
+
+   #title {
+      font-weight: bold;
+      font-size: medium;
+      text-align: center;
+    background-color: yellow;
+      grid-row: 1/2;
+      grid-column: 1/2;
+  }
+  #q1 {
+    text-align: center;
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+ #q2 {
+    text-align: center;
+    grid-row: 3/4;
+    grid-column: 1/2;
+}
+ #q3 {
+    text-align: center;
+    grid-row: 4/5;
+    grid-column: 1/2;
+}
+ #q4 {
+    text-align: center;
+    grid-row: 5/6;
+    grid-column: 1/2;
+}
+#q5 {
+    text-align: center;
+    grid-row: 6/7;
+    grid-column: 1/2;
+}
+#q6 {
+    text-align: center;
+    grid-row:7/8;
+    grid-column: 1/2;
+}
+#q7 {
+  text-align: center;
+  grid-row:8/9;
+  grid-column: 1/2;
+}
+#bottom {
+    text-align: center;
+    grid-row: 9/10;
+    grid-column: 1/2;
+}
+#side {
+    
+    background-color: white;
+    grid-row:1/9;
+    grid-column: 2/3;
+}
